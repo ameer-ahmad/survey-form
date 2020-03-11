@@ -1,0 +1,14 @@
+body {
+    background-color: #5f609e;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#title {
+    text-align: center;
+    color: white;
+    font-size: 36px;
+}
+
+#description {
+    text-align: center;
+}

@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Survey Form</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id="survey-form" action="">
+
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" placeholder="Enter your Email" required>
+
+        <label for="number" id="number-label">Age (optional)</label>
+        <input type="number" id="number" placeholder="Age" min="13" max="100">
+
+        <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
+        <select id="dropdown" required>
+            <option selected disabled>Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="pnts">Prefer not to say</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label for="recommend" id="recommend-label">Would you recommend freeCodeCamp to a friend</label>
+        <input type="radio" name="recommend" value="definitely" class="recommend-radio">
+        <label for="definitely" class="radio-label">Definitely</label>
+        <input type="radio" name="recommend" value="maybe" class="recommend-radio">
+        <label for="maybe" class="radio-label">Maybe</label>
+        <input type="radio" name="recommend" value="not-sure" class="recommend-radio">
+        <label for="not-sure" class="radio-label">Not sure</label>
+
+        <label for="improved" id="improved-label">What would you like to see improved? (check all that apply)</label>
+        <input type="checkbox" class="improved-check" name="front-end" value="front-end">
+        <label for="front-end" class="check-label">Front-end Projects</label>
+        <input type="checkbox" class="improved-check" name="back-end" value="back-end">
+        <label for="back-end" class="check-label">Back-end Projects</label>
+        <input type="checkbox" class="improved-check" name="data-visual" value="data-visual">
+        <label for="data-visual" class="check-label">Data Visualization</label>
+        <input type="checkbox" class="improved-check" name="challenges" value="challenges">
+        <label for="challenges" class="check-label">Challenges</label>
+
+        <label for="comments" id="comments-label">Any comments or suggestions?</label>
+        <textarea id="comments" placeholder="Enter your comment here..."></textarea>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+
+</body>
+
+</html>
